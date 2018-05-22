@@ -1,0 +1,15 @@
+<img style="width:200px;" [src]="photoUrl" [@photoState]="position" alt="">
+<br>
+
+<button (click)="changePosition('move')" class="button">Translate</button>
+<button (click)="changePosition('spin')" class="button">Rotate</button>
+<button (click)="changePosition('enlarge')" class="button">Scale</button>
+<button (click)="changePosition(null)" class="button">Reset</button>
+
+<br>
+
+<div>
+    <img style="width:200px;" [src]="photoUrl2" [@photoState2]="position" alt="">
+</div>
+
+<div style="background-color: red; width: 300px; height: 200px" [@divstate]="position"></div>
